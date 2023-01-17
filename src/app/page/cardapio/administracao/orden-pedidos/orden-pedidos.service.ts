@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { Observable } from "rxjs";
-import { Ordem, Pagamento } from './ordem.model';
+import { Ordem } from './ordem.model';
 
 @Injectable({
   providedIn: 'root'
@@ -36,5 +36,6 @@ export class OrdenPedidosService {
     const url = `${this.api}/orders/${id}`;
     return this.http.delete<Ordem>(url);
   }
+
 
 }

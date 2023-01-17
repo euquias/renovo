@@ -2,7 +2,6 @@ import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 
 import {FormsModule} from '@angular/forms';
-import { ReactiveFormsModule } from "@angular/forms";
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {PageComponent} from './page/page.component';
@@ -39,11 +38,6 @@ import { OrdenObsComponent } from './page/cardapio/administracao/orden-pedidos/o
 import { OrdenDeliteComponent } from './page/cardapio/administracao/orden-pedidos/orden-delite/orden-delite.component';
 import { DetalhesStatusComponent } from './page/cardapio/cesto/detalhes/detalhes-status/detalhes-status.component';
 import { Menu4Component } from './page/cardapio/menu4/menu4.component';
-import { PagamentoComponent } from './page/cardapio/administracao/dashboard/pagamento/pagamento.component';
-import { MenuUpdateComponent } from './page/cardapio/administracao/menu/menu-update/menu-update.component';
-import { MenuRemoverComponent } from './page/cardapio/administracao/menu/menu-remover/menu-remover.component';
-import { MenuExibirComponent } from './page/cardapio/administracao/menu/menu-exibir/menu-exibir.component';
-import { SistemaLoginComponent } from './sistema/sistema-login/sistema-login.component';
 
 
 @NgModule({
@@ -82,11 +76,6 @@ import { SistemaLoginComponent } from './sistema/sistema-login/sistema-login.com
     OrdenDeliteComponent,
     DetalhesStatusComponent,
     Menu4Component,
-    PagamentoComponent,
-    MenuUpdateComponent,
-    MenuRemoverComponent,
-    MenuExibirComponent,
-    SistemaLoginComponent,
 
 
   ],
@@ -94,7 +83,6 @@ import { SistemaLoginComponent } from './sistema/sistema-login/sistema-login.com
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule,
     FormsModule
 
 

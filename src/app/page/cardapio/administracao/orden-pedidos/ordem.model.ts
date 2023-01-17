@@ -3,13 +3,12 @@ class Ordem {
     public address: string,
     public number: string,
     public name: string,
-    public pagamento: Array<any>,
     public test: string,
     public obs: string,
-    public status: boolean,
+    public status:boolean,
     public detalheitems: Array<any>,
-    public id?: any,
-    public total?: any
+    public id?: number,
+    public total?: string
   ) {
   }
 }
@@ -23,15 +22,4 @@ class DetalheItem {
   }
 }
 
-class Pagamento {
-  constructor(
-    public mon: string,
-    public debcre: string,
-    public pix: string
-    ) {
-  }
-}
-
-export { Ordem, DetalheItem, Pagamento };
-
-
+export {Ordem, DetalheItem};

@@ -17,7 +17,6 @@ export class OrdenDeliteComponent implements OnInit {
     number: '',
     test: '',
     obs: '',
-    pagamento: [],
     status: false,
     detalheitems: []
   };
@@ -41,7 +40,7 @@ export class OrdenDeliteComponent implements OnInit {
 
   remover(): void {
     this.ordenpedidosservice.deletar(this.ordems.id!).subscribe(() => {
-
+     
       this.router.navigate(["adm/ordem"]);
     });
   }

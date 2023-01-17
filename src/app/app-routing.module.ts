@@ -22,7 +22,6 @@ import {Menu1Component} from './page/cardapio/menu1/menu1.component';
 import {Menu2Component} from './page/cardapio/menu2/menu2.component';
 import {NavComponent} from './page/nav/nav.component';
 import {SistemaComponent} from './sistema/sistema.component';
-import { MenuUpdateComponent } from './page/cardapio/administracao/menu/menu-update/menu-update.component';
 
 
 const routes: Routes = [
@@ -112,12 +111,7 @@ const routes: Routes = [
   {
     path: 'deletar/:id',
     component:OrdenDeliteComponent
-  },
-  {
-    path:'update/:id',
-    component:MenuUpdateComponent
   }
-
 ];
 
 @NgModule({
