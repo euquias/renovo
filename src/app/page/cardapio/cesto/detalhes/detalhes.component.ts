@@ -44,7 +44,7 @@ export class DetalhesComponent implements OnInit {
   }
 
   finalizarpedido(detalhe: Detalhe) {
-    console.log('VALOR TOTAL ', this.itemsvalue());
+     console.log('VALOR TOTAL ', this.itemsvalue());
     const _detalhe = { ...detalhe, total: this.itemsvalue() };
     _detalhe.detalheitems = this.detalhesitemservice
       .cestoitems()
